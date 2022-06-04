@@ -9,32 +9,14 @@ import UIKit
 
 class DetailRecipeViewController: UIViewController {
     
-    // MARK: - Mock data
-    private let mockIngredients = [Ingredient(description: "Potato",
-                                              quantityAmount: 200,
-                                              quantityUnit: .gram,
-                                              pricePerKilo: 1.20),
-                                   Ingredient(description: "Carrot",
-                                              quantityAmount: 50,
-                                              quantityUnit: .gram,
-                                              pricePerKilo: 0.70),
-                                   Ingredient(description: "Chicken",
-                                              quantityAmount: 400,
-                                              quantityUnit: .gram,
-                                              pricePerKilo: 12.0)]
-    
-    private lazy var mockRecipe = Recipe(image: UIImage(systemName: "book")!,
-                                         title: "Mock Recipe",
-                                         totalPrepTime: 1.5,
-                                         ingredients: mockIngredients,
-                                         preparationDescription: "Very cool way to cook your food!")
-    
     // MARK: - Properties
     @IBOutlet private weak var recipeImage: UIImageView!
     @IBOutlet private weak var recipeTitleLabel: UILabel!
     @IBOutlet private weak var quickInfoLabel: UILabel!
     @IBOutlet private weak var ingredientsTableView: UITableView!
     @IBOutlet private weak var preparationTextView: UITextView!
+    
+    private let mockRecipe = SelectedRecipiesManager.shared.allRecipies.first!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -57,6 +39,7 @@ class DetailRecipeViewController: UIViewController {
         recipeTitleLabel.text = mockRecipe.title
         quickInfoLabel.text = "Time: \(mockRecipe.totalPrepTime) Price: \(mockRecipe.totalPrice)"
         preparationTextView.text = mockRecipe.preparationDescription
+        preparationTextView.isEditable = false
     }
 }
 
@@ -73,9 +56,9 @@ extension DetailRecipeViewController: UITableViewDataSource {
         guard let ingredientCell = cell as? IngredientTableViewCell else { return UITableViewCell() }
         
         let ingredientModel = mockRecipe.ingredients[indexPath.row]
-        ingredientCell.descriptionLabel.text = ingredientModel.description
+        ingredientCell.descriptionLabel.text = ingredientModel.ingredient.description
         ingredientCell.amountLabel.text = String(ingredientModel.quantityAmount)
-        ingredientCell.unitLabel.text = ingredientModel.quantityUnit.rawValue
+        ingredientCell.unitLabel.text = ingredientModel.ingredient.quantityUnit.rawValue
         
         return ingredientCell
     }

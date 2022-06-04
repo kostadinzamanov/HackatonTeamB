@@ -17,11 +17,14 @@ struct Ingredient {
 struct AddedIngredient {
     let ingredient: Ingredient
     let quantityAmount: Int
+    var price: Double {
+        (Double(quantityAmount) / 1000) * ingredient.pricePerKilo
+    }
 }
 
 enum MeasurementUnit: String {
-    case gram
-    case milliliter
+    case gram = "g"
+    case milliliter = "ml"
 }
 
 enum Location: String {

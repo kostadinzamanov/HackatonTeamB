@@ -11,10 +11,13 @@ struct Recipe {
     
     let image: UIImage
     let title: String
-    var totalPrice: Double {
-        ingredients.map({$0.ingredient.pricePerKilo * Double(($0.quantityAmount / 1000))}).reduce(0, +)
+    var totalPrice: String {
+        let price = ingredients.map({$0.price}).reduce(0, +)
+        let result = String(format: "%.2f", price)
+        return result + "$"
     }
     let totalPrepTime: Double
     let ingredients: [AddedIngredient]
     let preparationDescription: String
 }
+
