@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
+class RecipiesListViewController: UIViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
+}
