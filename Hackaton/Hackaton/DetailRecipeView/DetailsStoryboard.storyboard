@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2a-pQ-pj2">
-                                <rect key="frame" x="30" y="282" width="243" height="67"/>
+                                <rect key="frame" x="30" y="262" width="243" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WhM-pe-0tp">
                                         <rect key="frame" x="0.0" y="0.0" width="321" height="37"/>
@@ -88,7 +88,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ONc-oU-PBo" firstAttribute="top" secondItem="P7O-GE-juS" secondAttribute="bottom" constant="8" id="0Bg-Xl-bXL"/>
-                            <constraint firstItem="P7O-GE-juS" firstAttribute="top" secondItem="G2a-pQ-pj2" secondAttribute="bottom" constant="10" id="4Gd-Id-yT5"/>
+                            <constraint firstItem="P7O-GE-juS" firstAttribute="top" secondItem="G2a-pQ-pj2" secondAttribute="bottom" constant="30" id="4Gd-Id-yT5"/>
                             <constraint firstItem="P7O-GE-juS" firstAttribute="top" secondItem="zec-yu-rbV" secondAttribute="bottom" constant="15" id="B7s-U0-5Lz"/>
                             <constraint firstItem="uUf-od-PtV" firstAttribute="trailing" secondItem="JYD-db-a8h" secondAttribute="trailing" constant="30" id="ECz-dy-8ba"/>
                             <constraint firstItem="uUf-od-PtV" firstAttribute="trailing" secondItem="ONc-oU-PBo" secondAttribute="trailing" constant="30" id="HhY-D1-grO"/>
