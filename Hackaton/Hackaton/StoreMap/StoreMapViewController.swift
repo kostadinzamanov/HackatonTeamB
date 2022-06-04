@@ -9,5 +9,7 @@ import Foundation
 import UIKit
 
 class StoreMapViewController: UIViewController {
-    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        .portrait
+    }
 }
