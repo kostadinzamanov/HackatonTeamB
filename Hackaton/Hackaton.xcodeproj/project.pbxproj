@@ -14,9 +14,10 @@
 		1E2B8444284B43590068714D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8443284B43590068714D /* Assets.xcassets */; };
 		1E2B8447284B43590068714D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8445284B43590068714D /* LaunchScreen.storyboard */; };
 		1E2B8455284B46340068714D /* RecipiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B8454284B46340068714D /* RecipiesListViewController.swift */; };
-		1E2B8457284B463D0068714D /* RecipiesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8456284B463D0068714D /* RecipiesListView.xib */; };
 		1E2B8459284B47BA0068714D /* RecipiesListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8458284B47BA0068714D /* RecipiesListStoryboard.storyboard */; };
 		1E2B845B284B4C6C0068714D /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B845A284B4C6C0068714D /* ListCell.swift */; };
+		1E2B845E284B53340068714D /* StoreMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B845D284B53340068714D /* StoreMapViewController.swift */; };
+		1E2B8460284B53400068714D /* StoreMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B845F284B53400068714D /* StoreMap.storyboard */; };
 		D5C0EE42284B4AFB00D936A2 /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EE40284B4AFB00D936A2 /* DetailRecipeViewController.swift */; };
 		D5C0EE43284B4AFB00D936A2 /* DetailRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C0EE41284B4AFB00D936A2 /* DetailRecipeViewController.xib */; };
 		D5C0EE47284B4B2C00D936A2 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EE45284B4B2C00D936A2 /* IngredientTableViewCell.swift */; };
@@ -33,9 +34,10 @@
 		1E2B8446284B43590068714D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E2B8448284B43590068714D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E2B8454284B46340068714D /* RecipiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesListViewController.swift; sourceTree = "<group>"; };
-		1E2B8456284B463D0068714D /* RecipiesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipiesListView.xib; sourceTree = "<group>"; };
 		1E2B8458284B47BA0068714D /* RecipiesListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipiesListStoryboard.storyboard; sourceTree = "<group>"; };
 		1E2B845A284B4C6C0068714D /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		1E2B845D284B53340068714D /* StoreMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMapViewController.swift; sourceTree = "<group>"; };
+		1E2B845F284B53400068714D /* StoreMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreMap.storyboard; sourceTree = "<group>"; };
 		D5C0EE40284B4AFB00D936A2 /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
 		D5C0EE41284B4AFB00D936A2 /* DetailRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecipeViewController.xib; sourceTree = "<group>"; };
 		D5C0EE45284B4B2C00D936A2 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				D5C0EE3F284B4ABF00D936A2 /* DetailRecipeView */,
 				1E2B8453284B46260068714D /* RecipiesList */,
+				1E2B845C284B53220068714D /* StoreMap */,
 				1E2B843A284B43570068714D /* AppDelegate.swift */,
 				1E2B843C284B43570068714D /* SceneDelegate.swift */,
 				1E2B843E284B43570068714D /* ViewController.swift */,
@@ -89,11 +92,19 @@
 			isa = PBXGroup;
 			children = (
 				1E2B8454284B46340068714D /* RecipiesListViewController.swift */,
-				1E2B8456284B463D0068714D /* RecipiesListView.xib */,
 				1E2B8458284B47BA0068714D /* RecipiesListStoryboard.storyboard */,
 				1E2B845A284B4C6C0068714D /* ListCell.swift */,
 			);
 			path = RecipiesList;
+			sourceTree = "<group>";
+		};
+		1E2B845C284B53220068714D /* StoreMap */ = {
+			isa = PBXGroup;
+			children = (
+				1E2B845D284B53340068714D /* StoreMapViewController.swift */,
+				1E2B845F284B53400068714D /* StoreMap.storyboard */,
+			);
+			path = StoreMap;
 			sourceTree = "<group>";
 		};
 		D5C0EE3F284B4ABF00D936A2 /* DetailRecipeView */ = {
@@ -173,11 +184,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E2B8457284B463D0068714D /* RecipiesListView.xib in Resources */,
 				1E2B8459284B47BA0068714D /* RecipiesListStoryboard.storyboard in Resources */,
 				1E2B8447284B43590068714D /* LaunchScreen.storyboard in Resources */,
 				D5C0EE43284B4AFB00D936A2 /* DetailRecipeViewController.xib in Resources */,
 				1E2B8444284B43590068714D /* Assets.xcassets in Resources */,
+				1E2B8460284B53400068714D /* StoreMap.storyboard in Resources */,
 				1E2B8442284B43570068714D /* Main.storyboard in Resources */,
 				D5C0EE48284B4B2C00D936A2 /* IngredientTableViewCell.xib in Resources */,
 			);
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C0EE42284B4AFB00D936A2 /* DetailRecipeViewController.swift in Sources */,
+				1E2B845E284B53340068714D /* StoreMapViewController.swift in Sources */,
 				1E2B8455284B46340068714D /* RecipiesListViewController.swift in Sources */,
 				D5C0EE47284B4B2C00D936A2 /* IngredientTableViewCell.swift in Sources */,
 				1E2B845B284B4C6C0068714D /* ListCell.swift in Sources */,

@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--StoreMapVC-->
+        <scene sceneID="l8C-fC-gwZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoreMap" referencedIdentifier="StoreMapVC" id="cZ4-cf-NFC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="I3L-hJ-ANZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRg-9a-L37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="301"/>
+        </scene>
         <!--Basket-->
         <scene sceneID="soS-KP-fQj">
             <objects>
@@ -45,29 +55,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="di6-ds-pHn" kind="relationship" relationship="viewControllers" id="CnE-JT-1TE"/>
-                        <segue destination="kK2-da-THO" kind="relationship" relationship="viewControllers" id="Z1Z-Y0-0el"/>
                         <segue destination="gbB-1h-daz" kind="relationship" relationship="viewControllers" id="JtO-Fa-4zk"/>
+                        <segue destination="cZ4-cf-NFC" kind="relationship" relationship="viewControllers" id="koI-RY-7wZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLD-Uy-fUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-451" y="-137"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="qok-ql-dFu">
-            <objects>
-                <viewController title="Map" id="kK2-da-THO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qCK-Co-wjn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Mhf-Uf-2dz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="fid-rz-D3I"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6lT-bE-GaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-119" y="588"/>
         </scene>
     </scenes>
     <resources>
