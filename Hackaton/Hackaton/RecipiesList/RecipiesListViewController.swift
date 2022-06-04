@@ -63,10 +63,9 @@ extension RecipiesListViewController: UICollectionViewDataSource {
 
 extension RecipiesListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailVC = DetailRecipeViewController(nibName: "DetailRecipeViewController", bundle: nil)
-        let view = UINib(nibName: "DetailRecipeViewController", bundle: nil).instantiate(withOwner: detailVC).first as? UIView
-        detailVC.view = view
-        navigationController?.pushViewController(detailVC, animated: true)
+        let storyboard = UIStoryboard(name: "DetailsStoryboard", bundle: nil)
+        let detailsVC = storyboard.instantiateViewController(withIdentifier: "DetailsVC") as? DetailRecipeViewController
+        navigationController?.pushViewController(detailsVC!, animated: true)
     }
 }
 
