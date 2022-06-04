@@ -8,7 +8,11 @@
 import UIKit
 
 class IngredientTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var unitLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,8 +23,4 @@ class IngredientTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var amountLabel: UILabel!
-    @IBOutlet weak var unitLabel: UILabel!
-    
 }

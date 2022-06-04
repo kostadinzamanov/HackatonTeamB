@@ -44,6 +44,12 @@ class DetailRecipeViewController: UIViewController {
         
         ingredientsTableView.register(IngredientTableViewCell.self,
                                       forCellReuseIdentifier: "IngredientCell")
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setUp()
+        ingredientsTableView.reloadData()
     }
     
     // MARK: - Methods
@@ -74,16 +80,4 @@ extension DetailRecipeViewController: UITableViewDataSource {
         
         return cell
     }
-}
-
-struct Recipe {
-    
-    let image: UIImage
-    let title: String
-    var totalPrice: Double {
-        ingredients.map({$0.pricePerKilo * Double(($0.quantityAmount / 1000))}).reduce(0, +)
-    }
-    let totalPrepTime: Double
-    let ingredients: [Ingredient]
-    let preparationDescription: String
 }
