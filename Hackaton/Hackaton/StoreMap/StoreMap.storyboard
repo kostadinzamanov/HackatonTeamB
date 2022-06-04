@@ -126,6 +126,15 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-tO-lqT">
                                 <rect key="frame" x="281" y="730" width="113" height="83"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hee-Ha-0xp">
+                                        <rect key="frame" x="35" y="31" width="28" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="Joi-zp-0Wi"/>
@@ -134,6 +143,15 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3A-3I-fLB">
                                 <rect key="frame" x="107" y="759" width="153" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksh-R8-bJJ">
+                                        <rect key="frame" x="62" y="17" width="35" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="f2K-ru-qc0"/>
@@ -181,6 +199,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Store Map" id="w4e-yf-geY"/>
+                    <connections>
+                        <outlet property="a1View" destination="Lii-FN-H4R" id="jXC-AL-63E"/>
+                        <outlet property="a2View" destination="xct-bl-i42" id="dPB-4J-a8a"/>
+                        <outlet property="a3View" destination="9vi-N0-CtN" id="oFd-ca-5OF"/>
+                        <outlet property="a4View" destination="LJK-J2-q8F" id="pF1-14-tJZ"/>
+                        <outlet property="diaryView" destination="z7t-aa-Esk" id="AxL-vD-Ag1"/>
+                        <outlet property="fruitAndVeggiesView" destination="Qsw-E1-yH6" id="1T6-Vd-lk9"/>
+                        <outlet property="meatView" destination="Piu-dN-o9G" id="lUv-Qi-YBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

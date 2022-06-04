@@ -18,6 +18,8 @@
 		1E2B845B284B4C6C0068714D /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B845A284B4C6C0068714D /* ListCell.swift */; };
 		1E2B845E284B53340068714D /* StoreMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B845D284B53340068714D /* StoreMapViewController.swift */; };
 		1E2B8460284B53400068714D /* StoreMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B845F284B53400068714D /* StoreMap.storyboard */; };
+		1E2B8463284B5E5E0068714D /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8461284B5E5E0068714D /* PopoverViewController.xib */; };
+		1E2B8464284B5E5E0068714D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B8462284B5E5E0068714D /* PopoverViewController.swift */; };
 		D5988BA6284B586400524C17 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5988BA5284B586400524C17 /* Ingredient.swift */; };
 		D5C0EE42284B4AFB00D936A2 /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EE40284B4AFB00D936A2 /* DetailRecipeViewController.swift */; };
 		D5C0EE43284B4AFB00D936A2 /* DetailRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C0EE41284B4AFB00D936A2 /* DetailRecipeViewController.xib */; };
@@ -39,6 +41,8 @@
 		1E2B845A284B4C6C0068714D /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		1E2B845D284B53340068714D /* StoreMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMapViewController.swift; sourceTree = "<group>"; };
 		1E2B845F284B53400068714D /* StoreMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreMap.storyboard; sourceTree = "<group>"; };
+		1E2B8461284B5E5E0068714D /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		1E2B8462284B5E5E0068714D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		D5988BA5284B586400524C17 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		D5C0EE40284B4AFB00D936A2 /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
 		D5C0EE41284B4AFB00D936A2 /* DetailRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecipeViewController.xib; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		1E2B845C284B53220068714D /* StoreMap */ = {
 			isa = PBXGroup;
 			children = (
+				1E2B8462284B5E5E0068714D /* PopoverViewController.swift */,
+				1E2B8461284B5E5E0068714D /* PopoverViewController.xib */,
 				1E2B845D284B53340068714D /* StoreMapViewController.swift */,
 				1E2B845F284B53400068714D /* StoreMap.storyboard */,
 			);
@@ -191,6 +197,7 @@
 				1E2B8447284B43590068714D /* LaunchScreen.storyboard in Resources */,
 				D5C0EE43284B4AFB00D936A2 /* DetailRecipeViewController.xib in Resources */,
 				1E2B8444284B43590068714D /* Assets.xcassets in Resources */,
+				1E2B8463284B5E5E0068714D /* PopoverViewController.xib in Resources */,
 				1E2B8460284B53400068714D /* StoreMap.storyboard in Resources */,
 				1E2B8442284B43570068714D /* Main.storyboard in Resources */,
 				D5C0EE48284B4B2C00D936A2 /* IngredientTableViewCell.xib in Resources */,
@@ -204,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2B8464284B5E5E0068714D /* PopoverViewController.swift in Sources */,
 				D5C0EE42284B4AFB00D936A2 /* DetailRecipeViewController.swift in Sources */,
 				1E2B845E284B53340068714D /* StoreMapViewController.swift in Sources */,
 				D5988BA6284B586400524C17 /* Ingredient.swift in Sources */,

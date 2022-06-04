@@ -9,7 +9,16 @@ import Foundation
 import UIKit
 
 class StoreMapViewController: UIViewController {
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        .portrait
-    }
+    @IBOutlet weak var meatView: UIView!
+    @IBOutlet weak var diaryView: UIView!
+    @IBOutlet weak var a1View: UIView!
+    @IBOutlet weak var a2View: UIView!
+    @IBOutlet weak var a3View: UIView!
+    @IBOutlet weak var a4View: UIView!
+    @IBOutlet weak var fruitAndVeggiesView: UIView!
+}
+
+
+extension StoreMapViewController: UIPopoverPresentationControllerDelegate {
+    
 }
