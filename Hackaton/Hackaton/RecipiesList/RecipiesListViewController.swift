@@ -51,6 +51,7 @@ extension RecipiesListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "DetailsStoryboard", bundle: nil)
         let detailsVC = storyboard.instantiateViewController(withIdentifier: "DetailsVC") as? DetailRecipeViewController
+        detailsVC?.recipe = SelectedRecipiesManager.shared.allRecipies[indexPath.row]
         navigationController?.pushViewController(detailsVC!, animated: true)
     }
 }

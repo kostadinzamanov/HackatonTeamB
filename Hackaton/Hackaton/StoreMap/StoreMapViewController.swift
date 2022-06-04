@@ -39,6 +39,7 @@ class StoreMapViewController: UIViewController {
     
     var recipies: [Recipe] = []
     var activeLocations: [StoreLocation] = []
+    var allIngredients: [AddedIngredient] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,7 @@ class StoreMapViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         activeLocations = []
-        var allIngredients: [AddedIngredient] = []
+        allIngredients = []
         SelectedRecipiesManager.shared.selectedRecipies.forEach { item in
             item.ingredients.forEach { ingr in
                 if !activeLocations.contains(where: {$0.type == ingr.ingredient.location}) {
@@ -109,11 +110,13 @@ class StoreMapViewController: UIViewController {
     
     @IBAction func showPopover(sender: UIButton) {
         let location = locationFor(button: sender)
+        let storeLocation = activeLocations.first(where: {$0.type == location})
         
+        var height: CGFloat = CGFloat(storeLocation!.items.count) * 20 + 40
         
         let popoverController = PopoverViewController(nibName: "PopoverViewController",
-                                                        labelText: "Meat",
-                                                      items: SelectedRecipiesManager.shared.allIngredients, prefferedSize: CGSize(width: 80, height: 180))
+                                                      labelText: location.rawValue.capitalized,
+                                                      items: storeLocation!.items, prefferedSize: CGSize(width: 150, height: height))
         popoverController.popoverPresentationController?.sourceView = sender
         popoverController.popoverPresentationController?.delegate = self
 

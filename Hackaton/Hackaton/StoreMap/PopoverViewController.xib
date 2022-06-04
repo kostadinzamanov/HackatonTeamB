@@ -15,31 +15,33 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="180" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na7-tM-dBZ">
-                    <rect key="frame" x="8" y="5" width="164" height="27"/>
+                    <rect key="frame" x="8" y="5" width="164" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA1-GD-0pH">
-                    <rect key="frame" x="72.5" y="33" width="35.5" height="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="tA1-GD-0pH">
+                    <rect key="frame" x="8" y="26.5" width="164" height="23.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="0.502520295227466" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="na7-tM-dBZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="8nT-vy-9k3"/>
                 <constraint firstItem="tA1-GD-0pH" firstAttribute="top" secondItem="na7-tM-dBZ" secondAttribute="bottom" constant="1" id="GAJ-gx-OeG"/>
+                <constraint firstItem="tA1-GD-0pH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="KAk-6v-wMx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tA1-GD-0pH" secondAttribute="bottom" constant="10" id="NlL-98-ik5"/>
                 <constraint firstItem="tA1-GD-0pH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bxB-Qo-D9D"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="na7-tM-dBZ" secondAttribute="trailing" constant="8" id="h2a-Jl-lmj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tA1-GD-0pH" secondAttribute="trailing" constant="8" id="peI-jd-WXH"/>
                 <constraint firstItem="na7-tM-dBZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="vcs-cu-P6A"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -16,7 +16,7 @@ class DetailRecipeViewController: UIViewController {
     @IBOutlet private weak var ingredientsTableView: UITableView!
     @IBOutlet private weak var preparationTextView: UITextView!
     
-    private let mockRecipe = SelectedRecipiesManager.shared.allRecipies[0]
+    var recipe: Recipe!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -36,14 +36,14 @@ class DetailRecipeViewController: UIViewController {
     // MARK: - Methods
     private func setUp() {
         setUpImage()
-        recipeTitleLabel.text = mockRecipe.title
-        quickInfoLabel.text = "Time: \(mockRecipe.totalPrepTime) Price: \(mockRecipe.totalPrice)"
-        preparationTextView.text = mockRecipe.preparationDescription
+        recipeTitleLabel.text = recipe.title
+        quickInfoLabel.text = "Time: \(recipe.totalPrepTime) Price: \(recipe.totalPrice)"
+        preparationTextView.text = recipe.preparationDescription
         preparationTextView.isEditable = false
     }
     
     private func setUpImage() {
-        recipeImage.image = mockRecipe.image
+        recipeImage.image = recipe.image
         
         let view = UIView(frame: recipeImage.frame)
 
@@ -67,7 +67,7 @@ class DetailRecipeViewController: UIViewController {
 extension DetailRecipeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mockRecipe.ingredients.count
+        return recipe.ingredients.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,7 +75,7 @@ extension DetailRecipeViewController: UITableViewDataSource {
         
         guard let ingredientCell = cell as? IngredientTableViewCell else { return UITableViewCell() }
         
-        let ingredientModel = mockRecipe.ingredients[indexPath.row]
+        let ingredientModel = recipe.ingredients[indexPath.row]
         ingredientCell.descriptionLabel.text = ingredientModel.ingredient.description
         ingredientCell.amountLabel.text = String(ingredientModel.quantityAmount)
         ingredientCell.unitLabel.text = ingredientModel.ingredient.quantityUnit.rawValue

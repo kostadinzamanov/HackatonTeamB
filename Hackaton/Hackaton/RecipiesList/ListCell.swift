@@ -13,6 +13,7 @@ class ListCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var prepTimeLabel: UILabel!
     @IBOutlet weak var tagsLabel: UILabel!
+    @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var cartButton: UIButton!
     
     var addToCartAction: (() -> Void)?
@@ -30,6 +31,8 @@ class ListCell: UICollectionViewCell {
             text += ingr.ingredient.description + " "
         }
         tagsLabel.text = text
+        
+        totalPriceLabel.text = "Total price: " + recipie.totalPrice
     }
     
     @IBAction func addToCart() {
