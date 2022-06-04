@@ -42,14 +42,13 @@ class DetailRecipeViewController: UIViewController {
         
         ingredientsTableView.dataSource = self
         
-        ingredientsTableView.register(IngredientTableViewCell.self,
+        ingredientsTableView.register(UINib(nibName: "IngredientTableViewCell", bundle: nil),
                                       forCellReuseIdentifier: "IngredientCell")
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setUp()
-        ingredientsTableView.reloadData()
     }
     
     // MARK: - Methods
@@ -65,7 +64,7 @@ class DetailRecipeViewController: UIViewController {
 extension DetailRecipeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mockIngredients.count
+        return mockRecipe.ingredients.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,11 +72,11 @@ extension DetailRecipeViewController: UITableViewDataSource {
         
         guard let ingredientCell = cell as? IngredientTableViewCell else { return UITableViewCell() }
         
-        let ingredientModel = mockIngredients[indexPath.row]
+        let ingredientModel = mockRecipe.ingredients[indexPath.row]
         ingredientCell.descriptionLabel.text = ingredientModel.description
         ingredientCell.amountLabel.text = String(ingredientModel.quantityAmount)
         ingredientCell.unitLabel.text = ingredientModel.quantityUnit.rawValue
         
-        return cell
+        return ingredientCell
     }
 }
