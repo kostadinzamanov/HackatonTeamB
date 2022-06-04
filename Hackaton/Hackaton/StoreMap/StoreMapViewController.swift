@@ -66,6 +66,8 @@ class StoreMapViewController: UIViewController {
             location.button.isHidden = false
         }
         
+        fruitAndVeggiesView.layer.borderWidth = 1
+        fruitAndVeggiesView.layer.borderColor = UIColor.label.cgColor
     }
     
     func buttonFor(location: Location) -> UIButton {
