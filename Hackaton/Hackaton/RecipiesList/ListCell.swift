@@ -12,5 +12,18 @@ class ListCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var prepTimeLabel: UILabel!
+    @IBOutlet weak var tagsLabel: UILabel!
     
+    var addToCartAction: (() -> Void)?
+    
+    func configure(recipie: Recipie) {
+        imageView.image = recipie.image
+        titleLabel.text = recipie.title
+        prepTimeLabel.text = String(recipie.prepTime)
+        var text = ""
+        for tag in recipie.tags {
+            text += tag
+        }
+        tagsLabel.text = text
+    }
 }
