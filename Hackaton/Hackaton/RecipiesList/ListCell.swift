@@ -16,14 +16,14 @@ class ListCell: UICollectionViewCell {
     
     var addToCartAction: (() -> Void)?
     
-    func configure(recipie: Recipie) {
+    func configure(recipie: Recipe) {
         imageView.image = recipie.image
         titleLabel.text = recipie.title
-        prepTimeLabel.text = String(recipie.prepTime)
-        var text = ""
-        for tag in recipie.tags {
-            text += tag
-        }
-        tagsLabel.text = text
+        prepTimeLabel.text = String(recipie.totalPrepTime)
+//        var text = ""
+//        for tag in recipie.tags {
+//            text += tag
+//        }
+//        tagsLabel.text = text
     }
 }

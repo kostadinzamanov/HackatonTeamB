@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,22 +15,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRg-9a-L37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-436" y="301"/>
-        </scene>
-        <!--Basket-->
-        <scene sceneID="soS-KP-fQj">
-            <objects>
-                <viewController title="Basket" id="di6-ds-pHn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IfQ-cT-Qde">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4Em-ct-xpY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="raT-7F-PeB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fno-0r-h7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="439" y="166"/>
         </scene>
         <!--ListVC-->
         <scene sceneID="zWj-4x-IdJ">
@@ -54,7 +36,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="di6-ds-pHn" kind="relationship" relationship="viewControllers" id="CnE-JT-1TE"/>
                         <segue destination="gbB-1h-daz" kind="relationship" relationship="viewControllers" id="JtO-Fa-4zk"/>
                         <segue destination="cZ4-cf-NFC" kind="relationship" relationship="viewControllers" id="koI-RY-7wZ"/>
                     </connections>
@@ -64,9 +45,4 @@
             <point key="canvasLocation" x="-451" y="-137"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

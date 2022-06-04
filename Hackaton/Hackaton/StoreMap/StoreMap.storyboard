@@ -213,11 +213,11 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
-        <!--Map-->
+        <!--Store Map-->
         <scene sceneID="UQN-ce-iTN">
             <objects>
                 <navigationController storyboardIdentifier="StoreMapVC" automaticallyAdjustsScrollViewInsets="NO" id="h7v-SX-59e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="kAQ-4C-c6s"/>
+                    <tabBarItem key="tabBarItem" title="Store Map" image="map" catalog="system" id="kAQ-4C-c6s"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Bw-Ys-nc0">
@@ -235,6 +235,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

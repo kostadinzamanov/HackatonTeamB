@@ -130,11 +130,11 @@
             </objects>
             <point key="canvasLocation" x="1839.1304347826087" y="97.767857142857139"/>
         </scene>
-        <!--Item-->
+        <!--All Recipies-->
         <scene sceneID="NJf-T3-IuG">
             <objects>
                 <navigationController storyboardIdentifier="ListVC" automaticallyAdjustsScrollViewInsets="NO" id="roZ-kU-wMh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7Fb-Dp-IGj"/>
+                    <tabBarItem key="tabBarItem" title="All Recipies" image="star.fill" catalog="system" id="7Fb-Dp-IGj"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zh2-ex-w1b">
@@ -156,6 +156,7 @@
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

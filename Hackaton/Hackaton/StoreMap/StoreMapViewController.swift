@@ -17,7 +17,7 @@ class StoreMapViewController: UIViewController {
     @IBOutlet weak var a4View: UIView!
     @IBOutlet weak var fruitAndVeggiesView: UIView!
     
-    var recipies: [Recipie] = []
+    var recipies: [Recipe] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
