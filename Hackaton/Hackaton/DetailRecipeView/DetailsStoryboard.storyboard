@@ -107,6 +107,13 @@
                             <constraint firstItem="8rU-1l-Vip" firstAttribute="top" secondItem="JYD-db-a8h" secondAttribute="bottom" constant="8" id="yaJ-qo-FTw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ingredientsTableView" destination="ONc-oU-PBo" id="MTI-aP-MwB"/>
+                        <outlet property="preparationTextView" destination="8rU-1l-Vip" id="gyd-2m-Oga"/>
+                        <outlet property="quickInfoLabel" destination="VPH-WE-Cio" id="6eL-17-V6v"/>
+                        <outlet property="recipeImage" destination="zec-yu-rbV" id="nGf-2a-8Qu"/>
+                        <outlet property="recipeTitleLabel" destination="WhM-pe-0tp" id="bY7-og-kNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
