@@ -16,7 +16,7 @@ class DetailRecipeViewController: UIViewController {
     @IBOutlet private weak var ingredientsTableView: UITableView!
     @IBOutlet private weak var preparationTextView: UITextView!
     
-    private let mockRecipe = SelectedRecipiesManager.shared.allRecipies.first!
+    private let mockRecipe = SelectedRecipiesManager.shared.allRecipies[0]
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -35,11 +35,31 @@ class DetailRecipeViewController: UIViewController {
     
     // MARK: - Methods
     private func setUp() {
-        recipeImage.image = mockRecipe.image
+        setUpImage()
         recipeTitleLabel.text = mockRecipe.title
         quickInfoLabel.text = "Time: \(mockRecipe.totalPrepTime) Price: \(mockRecipe.totalPrice)"
         preparationTextView.text = mockRecipe.preparationDescription
         preparationTextView.isEditable = false
+    }
+    
+    private func setUpImage() {
+        recipeImage.image = mockRecipe.image
+        
+        let view = UIView(frame: recipeImage.frame)
+
+        let gradient = CAGradientLayer()
+
+        gradient.frame = view.frame
+
+        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+
+        gradient.locations = [0.0, 0.8]
+
+        view.layer.insertSublayer(gradient, at: 0)
+
+        recipeImage.addSubview(view)
+
+        recipeImage.bringSubviewToFront(view)
     }
 }
 

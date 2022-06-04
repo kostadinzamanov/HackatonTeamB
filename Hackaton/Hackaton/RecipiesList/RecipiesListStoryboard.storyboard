@@ -34,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="391" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jMb-F5-gLA">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jMb-F5-gLA">
                                                     <rect key="frame" x="0.0" y="1.5" width="109" height="125.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="jMb-F5-gLA" secondAttribute="height" multiplier="109:128" id="hmi-oL-qCX"/>
