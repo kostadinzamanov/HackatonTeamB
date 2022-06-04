@@ -16,6 +16,7 @@
 		1E2B8455284B46340068714D /* RecipiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B8454284B46340068714D /* RecipiesListViewController.swift */; };
 		1E2B8457284B463D0068714D /* RecipiesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8456284B463D0068714D /* RecipiesListView.xib */; };
 		1E2B8459284B47BA0068714D /* RecipiesListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8458284B47BA0068714D /* RecipiesListStoryboard.storyboard */; };
+		1E2B845B284B4C6C0068714D /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B845A284B4C6C0068714D /* ListCell.swift */; };
 		D5C0EE42284B4AFB00D936A2 /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EE40284B4AFB00D936A2 /* DetailRecipeViewController.swift */; };
 		D5C0EE43284B4AFB00D936A2 /* DetailRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C0EE41284B4AFB00D936A2 /* DetailRecipeViewController.xib */; };
 		D5C0EE47284B4B2C00D936A2 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EE45284B4B2C00D936A2 /* IngredientTableViewCell.swift */; };
@@ -34,6 +35,7 @@
 		1E2B8454284B46340068714D /* RecipiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesListViewController.swift; sourceTree = "<group>"; };
 		1E2B8456284B463D0068714D /* RecipiesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipiesListView.xib; sourceTree = "<group>"; };
 		1E2B8458284B47BA0068714D /* RecipiesListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipiesListStoryboard.storyboard; sourceTree = "<group>"; };
+		1E2B845A284B4C6C0068714D /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		D5C0EE40284B4AFB00D936A2 /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
 		D5C0EE41284B4AFB00D936A2 /* DetailRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecipeViewController.xib; sourceTree = "<group>"; };
 		D5C0EE45284B4B2C00D936A2 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				1E2B8454284B46340068714D /* RecipiesListViewController.swift */,
 				1E2B8456284B463D0068714D /* RecipiesListView.xib */,
 				1E2B8458284B47BA0068714D /* RecipiesListStoryboard.storyboard */,
+				1E2B845A284B4C6C0068714D /* ListCell.swift */,
 			);
 			path = RecipiesList;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				D5C0EE42284B4AFB00D936A2 /* DetailRecipeViewController.swift in Sources */,
 				1E2B8455284B46340068714D /* RecipiesListViewController.swift in Sources */,
 				D5C0EE47284B4B2C00D936A2 /* IngredientTableViewCell.swift in Sources */,
+				1E2B845B284B4C6C0068714D /* ListCell.swift in Sources */,
 				1E2B843F284B43570068714D /* ViewController.swift in Sources */,
 				1E2B843B284B43570068714D /* AppDelegate.swift in Sources */,
 				1E2B843D284B43570068714D /* SceneDelegate.swift in Sources */,
