@@ -25,6 +25,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtn-y8-COz">
+                                        <rect key="frame" x="107" y="12" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b93-4m-NSa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -44,6 +53,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pS-4z-9nd">
+                                        <rect key="frame" x="101" y="12" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OBs-Kf-wcG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -61,6 +79,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-4v-RaA">
+                                        <rect key="frame" x="164" y="12" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MHH-Zg-0HO"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -78,6 +105,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJw-P1-crH">
+                                        <rect key="frame" x="167" y="12" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7TM-hM-wO5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
@@ -91,6 +127,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVx-fr-e6B">
+                                        <rect key="frame" x="167" y="12" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="g5r-ra-54O"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
@@ -104,6 +149,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoS-Pp-zb2">
+                                        <rect key="frame" x="167" y="12" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y2n-Js-ZIn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
@@ -117,6 +171,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu3-T4-COk">
+                                        <rect key="frame" x="129" y="94" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mappin.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="showPopoverWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QRP-uA-FFI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -200,12 +263,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="Store Map" id="w4e-yf-geY"/>
                     <connections>
+                        <outlet property="a1Button" destination="BiC-4v-RaA" id="hjJ-yI-Zsx"/>
                         <outlet property="a1View" destination="Lii-FN-H4R" id="jXC-AL-63E"/>
+                        <outlet property="a2Button" destination="hJw-P1-crH" id="TKW-qZ-p4r"/>
                         <outlet property="a2View" destination="xct-bl-i42" id="dPB-4J-a8a"/>
+                        <outlet property="a3Button" destination="VVx-fr-e6B" id="cOG-2o-1E0"/>
                         <outlet property="a3View" destination="9vi-N0-CtN" id="oFd-ca-5OF"/>
+                        <outlet property="a4Button" destination="AoS-Pp-zb2" id="zFq-CH-71B"/>
                         <outlet property="a4View" destination="LJK-J2-q8F" id="pF1-14-tJZ"/>
+                        <outlet property="diaryButton" destination="5pS-4z-9nd" id="BHn-Ui-vgt"/>
                         <outlet property="diaryView" destination="z7t-aa-Esk" id="AxL-vD-Ag1"/>
+                        <outlet property="fruitAndVeggiesButton" destination="Mu3-T4-COk" id="4S9-TM-bWi"/>
                         <outlet property="fruitAndVeggiesView" destination="Qsw-E1-yH6" id="1T6-Vd-lk9"/>
+                        <outlet property="meatButton" destination="Jtn-y8-COz" id="U2s-xA-CjX"/>
                         <outlet property="meatView" destination="Piu-dN-o9G" id="lUv-Qi-YBI"/>
                     </connections>
                 </viewController>
@@ -236,6 +306,7 @@
     </scenes>
     <resources>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -27,8 +27,20 @@ class SelectedRecipiesManager: NSObject {
         self.allIngredients = [pork, chicken, garlic, mushrooms, rosmary, milk, salt]
         
         let rec1 = Recipe(image: UIImage(systemName: "book")!, title: "Pork Chops", totalPrepTime: 1.5, ingredients: [AddedIngredient(ingredient: pork, quantityAmount: 500), AddedIngredient(ingredient: garlic, quantityAmount: 10), AddedIngredient(ingredient: salt, quantityAmount: 5)], preparationDescription: "some description")
-        let rec2 = Recipe(image: UIImage(systemName: "book")!, title: "Chicken fillet", totalPrepTime: 1.5, ingredients: [AddedIngredient(ingredient: chicken, quantityAmount: 500), AddedIngredient(ingredient: garlic, quantityAmount: 10), AddedIngredient(ingredient: rosmary, quantityAmount: 20)], preparationDescription: "some description")
-        let rec3 = Recipe(image: UIImage(systemName: "book")!, title: "Baked Mushroom", totalPrepTime: 1.5, ingredients: [AddedIngredient(ingredient: mushrooms, quantityAmount: 500), AddedIngredient(ingredient: salt, quantityAmount: 5)], preparationDescription: "some description")
+        let rec2 = Recipe(image: UIImage(systemName: "book")!, title: "Chicken fillet", totalPrepTime: 1.0, ingredients: [AddedIngredient(ingredient: chicken, quantityAmount: 500), AddedIngredient(ingredient: garlic, quantityAmount: 10), AddedIngredient(ingredient: rosmary, quantityAmount: 20)], preparationDescription: "some description")
+        let rec3 = Recipe(image: UIImage(systemName: "book")!, title: "Baked Mushroom", totalPrepTime: 0.5, ingredients: [AddedIngredient(ingredient: mushrooms, quantityAmount: 500), AddedIngredient(ingredient: salt, quantityAmount: 5)], preparationDescription: "some description")
         allRecipies = [rec1, rec2, rec3]
+    }
+    
+    func isSelected(recipe: Recipe) -> Bool {
+        return selectedRecipies.contains(where: {$0.title == recipe.title})
+    }
+    
+    func addRemove(item: Recipe) {
+        if selectedRecipies.contains(where: {$0.title == item.title}) {
+            selectedRecipies.removeAll(where: {$0.title == item.title})
+        } else {
+            selectedRecipies.append(item)
+        }
     }
 }

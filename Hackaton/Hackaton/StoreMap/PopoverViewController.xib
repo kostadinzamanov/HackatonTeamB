@@ -9,7 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopoverViewController">
             <connections>
-                <outlet property="primaryLabel" destination="na7-tM-dBZ" id="92J-If-Avq"/>
+                <outlet property="itemsLabel" destination="tA1-GD-0pH" id="3B3-bP-V3O"/>
+                <outlet property="titleLabel" destination="na7-tM-dBZ" id="hPo-zV-VBK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,10 +19,16 @@
             <rect key="frame" x="0.0" y="0.0" width="180" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select source album." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na7-tM-dBZ">
-                    <rect key="frame" x="8" y="5" width="164" height="50"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na7-tM-dBZ">
+                    <rect key="frame" x="8" y="5" width="164" height="27"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA1-GD-0pH">
+                    <rect key="frame" x="72.5" y="33" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -29,7 +36,9 @@
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="na7-tM-dBZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="8nT-vy-9k3"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="na7-tM-dBZ" secondAttribute="bottom" constant="5" id="ffg-QF-yEe"/>
+                <constraint firstItem="tA1-GD-0pH" firstAttribute="top" secondItem="na7-tM-dBZ" secondAttribute="bottom" constant="1" id="GAJ-gx-OeG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tA1-GD-0pH" secondAttribute="bottom" constant="10" id="NlL-98-ik5"/>
+                <constraint firstItem="tA1-GD-0pH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bxB-Qo-D9D"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="na7-tM-dBZ" secondAttribute="trailing" constant="8" id="h2a-Jl-lmj"/>
                 <constraint firstItem="na7-tM-dBZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="vcs-cu-P6A"/>
             </constraints>

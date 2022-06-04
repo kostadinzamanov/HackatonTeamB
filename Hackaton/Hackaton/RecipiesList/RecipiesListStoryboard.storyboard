@@ -58,6 +58,9 @@
                                                     <rect key="frame" x="334" y="8" width="49" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="addToCart" destination="b7U-BX-3HY" eventType="touchUpInside" id="CCa-fn-UPx"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3um-iH-jrC">
                                                     <rect key="frame" x="117" y="62.5" width="274" height="21"/>
@@ -92,6 +95,7 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <size key="customSize" width="391" height="128"/>
                                         <connections>
+                                            <outlet property="cartButton" destination="bVz-mR-okL" id="dTn-rV-B9m"/>
                                             <outlet property="imageView" destination="jMb-F5-gLA" id="0Tw-ko-C0L"/>
                                             <outlet property="prepTimeLabel" destination="wrP-FE-n0d" id="PH3-9m-KW9"/>
                                             <outlet property="tagsLabel" destination="3um-iH-jrC" id="GZN-uG-XFD"/>

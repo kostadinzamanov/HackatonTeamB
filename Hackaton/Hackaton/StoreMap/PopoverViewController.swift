@@ -9,15 +9,18 @@ import UIKit
 
 class PopoverViewController: UIViewController {
 
-    @IBOutlet weak var primaryLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var itemsLabel: UILabel!
     var labelText: String?
+    var items: [Ingredient] = []
     
-    init(nibName: String?, bundle: Bundle? = nil, labelText: String?, prefferedSize: CGSize, permittedArrowDirections: UIPopoverArrowDirection = .any) {
+    init(nibName: String?, bundle: Bundle? = nil, labelText: String?, items: [Ingredient], prefferedSize: CGSize, permittedArrowDirections: UIPopoverArrowDirection = .any) {
         super.init(nibName: nibName, bundle: bundle)
         modalPresentationStyle = .popover
         preferredContentSize = prefferedSize
         popoverPresentationController?.permittedArrowDirections = permittedArrowDirections
         self.labelText = labelText
+        self.items = items
     }
     
     required init?(coder: NSCoder) {
@@ -25,6 +28,14 @@ class PopoverViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        primaryLabel.text = labelText
+        titleLabel.text = labelText
+        var text = ""
+        items.forEach { ingredient in
+            let newLine = ingredient.description + "\n"
+            text += newLine
+        }
+        
+        itemsLabel.text = text
+        itemsLabel.sizeToFit()
     }
 }

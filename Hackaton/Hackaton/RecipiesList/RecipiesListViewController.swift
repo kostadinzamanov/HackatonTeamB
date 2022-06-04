@@ -21,7 +21,7 @@ class RecipiesListViewController: UIViewController {
     }
     
     func addToCart(recipie: Recipe) {
-        
+        SelectedRecipiesManager.shared.addRemove(item: recipie)
     }
     
     @IBAction func addNewRecipie() {
