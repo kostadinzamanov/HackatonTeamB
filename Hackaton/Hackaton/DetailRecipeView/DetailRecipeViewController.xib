@@ -10,6 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailRecipeViewController" customModule="Hackaton" customModuleProvider="target">
             <connections>
+                <outlet property="ingredientsTableView" destination="a0d-jc-DaY" id="0zX-s4-QRN"/>
+                <outlet property="preparationTextView" destination="TSa-N8-R23" id="Kko-9Q-1fP"/>
+                <outlet property="quickInfoLabel" destination="hB9-x6-7xO" id="275-ve-mxB"/>
+                <outlet property="recipeImage" destination="6EH-Sw-uNS" id="scf-Ax-e57"/>
+                <outlet property="recipeTitleLabel" destination="Rgq-bP-EKA" id="hpg-8a-gi7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

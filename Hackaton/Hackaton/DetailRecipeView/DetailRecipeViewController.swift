@@ -9,21 +9,44 @@ import UIKit
 
 class DetailRecipeViewController: UIViewController {
 
+    
+    @IBOutlet private weak var recipeImage: UIImageView!
+    @IBOutlet private weak var recipeTitleLabel: UILabel!
+    @IBOutlet private weak var quickInfoLabel: UILabel!
+    @IBOutlet private weak var ingredientsTableView: UITableView!
+    @IBOutlet private weak var preparationTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        ingredientsTableView.dataSource = self
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+// MARK: - UITableViewDataSource
+extension DetailRecipeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+}
+
+struct Ingredient {
+    
+    let description: String
+    let quantityAmount: Int
+    let quantityUnit: MeasurementUnit
+    let pricePerKilo: Double
+}
+
+enum MeasurementUnit {
+    
+    case gram
+    case milliliter
+}
+
+
