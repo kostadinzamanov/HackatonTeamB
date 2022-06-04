@@ -13,6 +13,8 @@
 		1E2B8442284B43570068714D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8440284B43570068714D /* Main.storyboard */; };
 		1E2B8444284B43590068714D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8443284B43590068714D /* Assets.xcassets */; };
 		1E2B8447284B43590068714D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8445284B43590068714D /* LaunchScreen.storyboard */; };
+		1E2B8455284B46340068714D /* RecipiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B8454284B46340068714D /* RecipiesListViewController.swift */; };
+		1E2B8457284B463D0068714D /* RecipiesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2B8456284B463D0068714D /* RecipiesListView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1E2B8443284B43590068714D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E2B8446284B43590068714D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E2B8448284B43590068714D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2B8454284B46340068714D /* RecipiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesListViewController.swift; sourceTree = "<group>"; };
+		1E2B8456284B463D0068714D /* RecipiesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipiesListView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		1E2B8439284B43570068714D /* Hackaton */ = {
 			isa = PBXGroup;
 			children = (
+				1E2B8453284B46260068714D /* RecipiesList */,
 				1E2B843A284B43570068714D /* AppDelegate.swift */,
 				1E2B843C284B43570068714D /* SceneDelegate.swift */,
 				1E2B843E284B43570068714D /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				1E2B8448284B43590068714D /* Info.plist */,
 			);
 			path = Hackaton;
+			sourceTree = "<group>";
+		};
+		1E2B8453284B46260068714D /* RecipiesList */ = {
+			isa = PBXGroup;
+			children = (
+				1E2B8454284B46340068714D /* RecipiesListViewController.swift */,
+				1E2B8456284B463D0068714D /* RecipiesListView.xib */,
+			);
+			path = RecipiesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2B8457284B463D0068714D /* RecipiesListView.xib in Resources */,
 				1E2B8447284B43590068714D /* LaunchScreen.storyboard in Resources */,
 				1E2B8444284B43590068714D /* Assets.xcassets in Resources */,
 				1E2B8442284B43570068714D /* Main.storyboard in Resources */,
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2B8455284B46340068714D /* RecipiesListViewController.swift in Sources */,
 				1E2B843F284B43570068714D /* ViewController.swift in Sources */,
 				1E2B843B284B43570068714D /* AppDelegate.swift in Sources */,
 				1E2B843D284B43570068714D /* SceneDelegate.swift in Sources */,
