@@ -31,4 +31,17 @@ class SelectedRecipiesManager: NSObject {
         let rec3 = Recipe(image: UIImage(imageLiteralResourceName: "mushrooms"), title: "Baked Mushroom", totalPrepTime: 1.5, ingredients: [AddedIngredient(ingredient: mushrooms, quantityAmount: 500), AddedIngredient(ingredient: salt, quantityAmount: 5)], preparationDescription: "Honestly, I don't eat mushrooms, Kosta put this recipe in. Email him for details.")
         allRecipies = [rec1, rec2, rec3]
     }
+    
+    func isSelected(recipe: Recipe) -> Bool {
+        return selectedRecipies.contains(where: {$0.title == recipe.title})
+    }
+    
+    func addRemove(item: Recipe) {
+        if selectedRecipies.contains(where: {$0.title == item.title}) {
+            selectedRecipies.removeAll(where: {$0.title == item.title})
+        } else {
+            selectedRecipies.append(item)
+        }
+    }
+
 }
