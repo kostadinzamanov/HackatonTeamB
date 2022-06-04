@@ -8,25 +8,11 @@
 import Foundation
 import UIKit
 
-struct Recipie {
-    var title: String
-    var prepTime: Double
-    var image: UIImage
-    var tags: [String]
-}
-
 class RecipiesListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var recipies: [Recipie] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let rec1 = Recipie(title: "Pork chops", prepTime: 1.5, image: UIImage(systemName: "book")!, tags: ["pork", "non-vegan"])
-        let rec2 = Recipie(title: "Chicken fillet", prepTime: 1, image: UIImage(systemName: "book")!, tags: ["chicken", "non-vegan"])
-        let rec3 = Recipie(title: "Pork chops 2", prepTime: 0.5, image: UIImage(systemName: "book")!, tags: ["pork", "non-vegan"])
-        recipies = [rec1, rec2, rec3]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +20,7 @@ class RecipiesListViewController: UIViewController {
         collectionView.reloadData()
     }
     
-    func addToCart(recipie: Recipie) {
+    func addToCart(recipie: Recipe) {
         
     }
     
@@ -46,16 +32,16 @@ class RecipiesListViewController: UIViewController {
 
 extension RecipiesListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return recipies.count
+        return SelectedRecipiesManager.shared.allRecipies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCell
         cell.addCellShadow(color: UIColor.darkGray, opacity: 0.5)
-        cell.configure(recipie: recipies[indexPath.row])
+        cell.configure(recipie: SelectedRecipiesManager.shared.allRecipies[indexPath.row])
         cell.addToCartAction = { [weak self] in
             guard let self = self else {return}
-            self.addToCart(recipie: self.recipies[indexPath.row])
+            self.addToCart(recipie: SelectedRecipiesManager.shared.allRecipies[indexPath.row])
         }
         return cell
     }
