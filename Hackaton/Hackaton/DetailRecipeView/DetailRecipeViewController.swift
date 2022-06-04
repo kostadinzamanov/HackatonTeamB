@@ -9,6 +9,7 @@ import UIKit
 
 class DetailRecipeViewController: UIViewController {
     
+    // MARK: - Mock data
     private let mockIngredients = [Ingredient(description: "Potato",
                                               quantityAmount: 200,
                                               quantityUnit: .gram,
@@ -22,12 +23,20 @@ class DetailRecipeViewController: UIViewController {
                                               quantityUnit: .gram,
                                               pricePerKilo: 12.0)]
     
+    private lazy var mockRecipe = Recipe(image: UIImage(systemName: "book")!,
+                                         title: "Mock Recipe",
+                                         totalPrepTime: 1.5,
+                                         ingredients: mockIngredients,
+                                         preparationDescription: "Very cool way to cook your food!")
+    
+    // MARK: - Properties
     @IBOutlet private weak var recipeImage: UIImageView!
     @IBOutlet private weak var recipeTitleLabel: UILabel!
     @IBOutlet private weak var quickInfoLabel: UILabel!
     @IBOutlet private weak var ingredientsTableView: UITableView!
     @IBOutlet private weak var preparationTextView: UITextView!
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +44,14 @@ class DetailRecipeViewController: UIViewController {
         
         ingredientsTableView.register(IngredientTableViewCell.self,
                                       forCellReuseIdentifier: "IngredientCell")
+    }
+    
+    // MARK: - Methods
+    private func setUp() {
+        recipeImage.image = mockRecipe.image
+        recipeTitleLabel.text = mockRecipe.title
+        quickInfoLabel.text = "Time: \(mockRecipe.totalPrepTime) Price: \(mockRecipe.totalPrice)"
+        preparationTextView.text = mockRecipe.preparationDescription
     }
 }
 
@@ -57,4 +74,16 @@ extension DetailRecipeViewController: UITableViewDataSource {
         
         return cell
     }
+}
+
+struct Recipe {
+    
+    let image: UIImage
+    let title: String
+    var totalPrice: Double {
+        ingredients.map({$0.pricePerKilo * Double(($0.quantityAmount / 1000))}).reduce(0, +)
+    }
+    let totalPrepTime: Double
+    let ingredients: [Ingredient]
+    let preparationDescription: String
 }
