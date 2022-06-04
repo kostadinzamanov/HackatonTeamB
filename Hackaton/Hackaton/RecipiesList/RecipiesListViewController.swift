@@ -37,7 +37,7 @@ extension RecipiesListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCell
-        cell.addCellShadow(color: UIColor.darkGray, opacity: 0.5)
+        cell.addCellShadow(color: UIColor.darkGray, opacity: 0.8)
         cell.configure(recipie: SelectedRecipiesManager.shared.allRecipies[indexPath.row])
         cell.addToCartAction = { [weak self] in
             guard let self = self else {return}
@@ -65,14 +65,14 @@ extension RecipiesListViewController: UICollectionViewDelegateFlowLayout {
 
 extension UICollectionViewCell {
     func addCellShadow(color: UIColor, opacity: Float) {
-        contentView.layer.cornerRadius = 2.0
+        contentView.layer.cornerRadius = 5.0
         contentView.layer.borderWidth = 1.0
-        contentView.layer.borderColor = UIColor.clear.cgColor
+        contentView.layer.borderColor = UIColor.systemGray3.cgColor
         contentView.layer.masksToBounds = true
         
         layer.shadowColor = color.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        layer.shadowRadius = 2.0
+        layer.shadowOffset = CGSize(width: 0, height: 3.0)
+        layer.shadowRadius = 3.0
         layer.shadowOpacity = opacity
         layer.masksToBounds = false
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
